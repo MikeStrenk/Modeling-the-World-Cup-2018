@@ -3,7 +3,7 @@
 
 ![Soccer](exploration/IMG_1236.jpg)
 
-The goal of this project is to see if its possible to use player level data from the FIFA 18 video game to built a reasonable model for predicting outcomes of soccer matches. From there, use the soccer match model to determine each country's chances of being crowned champion.
+The goal of this project is to see if its possible to use player level data from the FIFA 18 video game to build a reasonable model for predicting outcomes of soccer matches. From there, use the model to determine each country's chances of being crowned champion.
 
 ## Main Questions
 - Which statistical model would be most appropriate for modeling soccer games?
@@ -11,22 +11,25 @@ The goal of this project is to see if its possible to use player level data from
 
 ## Datasets
 - Player ratings from the FIFA 18 Video Game
+    - 18,000 players
+    - 70 datapoints per player
 - 2017-2018 Season results for training the model from:
     - English Premiere League
     - German Bundesliga
     - Spanish La Liga
     - Italian Serie A
-- World Cup 2018 schedule
+    - 1500 total matches
+- World Cup 2018 match schedule
 
 ## Poisson Modeling Approach
 Open the Juptyer Notebook to see all the python code and run the model yourself:
 [https://github.com/MikeStrenk/Modeling-the-World-Cup-2018/blob/master/worldcup2018_predictions.ipynb]
 
-The Poisson distribution model was chosen because the odds of a soccer goal does not depend on how much time has passed since the previous goal. The Poisson distribution models the probability of events happening n number of times within a set time frame. Those events in our case is each World Cup team's goals.
+The Poisson distribution model was chosen because the odds of a soccer goal does not depend on how much time has passed since the previous goal. The Poisson distribution models the probability of events happening 'n' number of times within a set time frame. Those events in our case is each country's goals.
 
-The Poisson model takes team scores as the input. These team scores are generated from the individual strength of each of the team's players separated by attacking, midfield and defensive players. The model is trained using roughly 1500 Club matches from the 2017-2018 season from the four main european club leagues.
+The Poisson model takes team ratings as the input. These team scores are generated from the individual strength of each of the team's players separated by attacking, midfield and defensive players. The model is trained using roughly 1500 Club matches from the 2017-2018 season from the four main european club leagues.
 
-The output is an array of probabilities of each possible goal result between the two teams.
+The output from the Poisson distribution model is an array of probabilities of each possible goal result between the two teams.
 
 ![Soccer](exploration/poissonexample.png)
 
