@@ -33,6 +33,11 @@ The overall probability of a draw is the sum of the red diagonal values. Team A'
 
 ![Soccer](exploration/poissonexample2.png)
 
+## Group Stage Probabilities
+![Soccer](exploration/groupstage.png)
+![Soccer](exploration/groupstage2.png)
+
+
 ## Results After Running the World Cup Simulation 1000 times
 Since the simulation takes into account alternate potential paths to the finals based on different group stage outcomes, it is interesting to see that some teams end up closer to the top than stronger teams who have far tougher early matches (see Portugal, Spain). Croatia and Mexico are less likely to play a stronger team early in the Cup schedule so they tended to advance more often than one might expect.
 
