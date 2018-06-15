@@ -19,7 +19,8 @@ The goal of this project is to see if its possible to use player level data from
 - World Cup 2018 schedule
 
 ## Poisson Modeling Approach
-Open the Juptyer Notebook to see all the code and run the model yourself: [https://github.com/MikeStrenk/Team-3-data-project/blob/master/worldcup2018_predictions.ipynb]
+Open the Juptyer Notebook to see all the python code and run the model yourself:
+[https://github.com/MikeStrenk/Modeling-the-World-Cup-2018/blob/master/worldcup2018_predictions.ipynb]
 
 The Poisson distribution model was chosen because the odds of a soccer goal does not depend on how much time has passed since the previous goal. The Poisson distribution models the probability of events happening n number of times within a set time frame. Those events in our case is each World Cup team's goals.
 
