@@ -73,3 +73,4 @@ Since the simulation takes into account alternate potential paths to the finals 
 - Peru 4
 - Iran 3
 - Costa Rica 2
+[![Run on Repl.it](https://repl.it/badge/github/MikeStrenk/Modeling-the-World-Cup-2018)](https://repl.it/github/MikeStrenk/Modeling-the-World-Cup-2018)
